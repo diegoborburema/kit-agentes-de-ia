@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "id": "e8ba837d-1a3c-5c40-a72f-305b3a191ed0",
+  "developer": {
+    "name": "Kit de agentes de IA (github.com/diegoborburema)",
+    "websiteUrl": "https://go.microsoft.com/fwlink/?linkid=2352565",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?linkid=2138865",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2138950"
+  },
+  "name": {
+    "short": "Redator de Atas",
+    "full": "Redator de Atas"
+  },
+  "description": {
+    "short": "Criado com o Construtor de Agentes do Microsoft 365 Copilot",
+    "full": "Escreve a ata de uma reunião a partir da transcrição e dos materiais, na estrutura do tipo: homologação, discovery, refinamento, alinhamento ou outro. Lê inteira a transcrição do Teams (.docx ou .vtt) ou as notas, pelo script da skill, e separa quem participou de quem só foi convidado. Distingue decisão, alinhamento, hipótese, dúvida e próximo passo, e só registra responsável e prazo quando foram ditos. Antes de mostrar, confere a ata contra a fonte: participantes sem prova de presença, quem falou e ficou de fora, números e prazos fora da fonte ou corrigidos na reunião, e seções a mais. Entrega a ata pronta para o Loop, o Teams e o e-mail, com os pontos que precisam da sua confirmação à parte. Não envia nada."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#E8F0FE",
+  "validDomains": [
+    "*.botframework.com",
+    "*.*.botframework.com",
+    "copilotstudio.microsoft.com",
+    "copilotstudio.preview.microsoft.com"
+  ],
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "e8ba837d-1a3c-5c40-a72f-305b3a191ed0.gpt.374084c0-3f15-5848-9117-cf3e99a15571",
+        "file": "declarativeAgent_0.json"
+      }
+    ]
+  }
+}

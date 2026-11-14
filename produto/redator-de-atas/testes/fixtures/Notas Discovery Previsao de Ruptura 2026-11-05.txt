@@ -1,0 +1,32 @@
+<div class="loop-note"><h2>Discovery Previsão de Ruptura – sessão 1</h2></div>
+Data: 05/11/2026 · 10h–11h30
+Convidados: Lucas Andrade, Ana Souza, Caio Teles, Renata Okada, Jorge Nunes, Gustavo Lima
+Presentes: Lucas Andrade, Ana Souza (Dados), Caio Teles (Ciência de Dados), Renata Okada (Trade Marketing), Jorge Nunes (Supply)
+[Event] Gravação não disponível
+<span class="note-heading">Dor</span>
+- Lojas ficam sem produto na gôndola e o Trade só descobre pelo promotor, dias depois.
+- Renata: Trade estima perda de 3% da venda nas lojas com ruptura (número da área, ainda não validado).
+- Jorge: no Supply, o problema aparece como pedido urgente; não há visão antecipada.
+<span class="note-heading">Usuários</span>
+- Promotores (reportam a ruptura) e analistas de Trade (consolidam).
+- Jorge citou o planejador de demanda do Supply como possível usuário. Não discutido.
+<span class="note-heading">Hoje</span>
+- Promotor manda foto e mensagem no WhatsApp para o analista.
+- Analista consolida numa planilha semanal e manda para o KAM.
+- Não existe registro histórico das rupturas.
+<span class="note-heading">Ideias (hipóteses)</span>
+- Caio: modelo de previsão de ruptura por SKU e loja, com base no sell-out da Base Cambuci e no estoque informado.
+- Ana: alerta no app do promotor, antes da ruptura acontecer. Hipótese; depende de o app aceitar notificação.
+- Renata: o ideal seria prever com uma semana de antecedência.
+<span class="note-heading">Critério</span>
+- Renata citou acerto mínimo de 70% como referência para considerar útil. A validar com a diretoria de Trade.
+<span class="note-heading">Premissas e restrições</span>
+- Base Cambuci chega com 2 semanas de atraso para parte das redes [3]
+- Estoque de loja só existe para as redes que mandam EDI.
+<span class="note-heading">Dúvidas</span>
+- Lojas pequenas, sem EDI, entram no escopo?
+- Quem é o dono do processo depois da implantação: Trade ou Supply?
+<span class="note-heading">Próximos passos</span>
+- Caio: protótipo com 2 categorias até 20/11.
+- Ana: levantar com o time da Base Cambuci se dá pra reduzir o atraso.
+- Discutir com Supply o papel do planejador de demanda (sem responsável).

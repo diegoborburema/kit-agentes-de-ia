@@ -1,0 +1,1 @@
+leitura de arquivo de recurso da skill: OK

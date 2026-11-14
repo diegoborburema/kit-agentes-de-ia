@@ -1,0 +1,133 @@
+WEBVTT
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a000/0-0
+00:00:04.000 --> 00:00:09.250
+<v Lucas Andrade>Bom dia, pessoal.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a001/1-0
+00:00:09.250 --> 00:00:14.500
+<v Lucas Andrade>Hoje é a homologação do módulo 4 do Tarumã. A Ana vai apresentar as três funcionalidades e a gente vai passando uma por uma.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a010/2-0
+00:00:15.000 --> 00:00:19.250
+<v Souza,Ana,BR-São Paulo>São três: o filtro por canal, a exportação para Excel e o alerta de ruptura por e-mail.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a011/3-0
+00:00:19.250 --> 00:00:23.500
+<v Souza,Ana,BR-São Paulo>Começo pelo filtro.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a020/4-0
+00:00:24.000 --> 00:00:51.500
+<v Souza,Ana,BR-São Paulo>Dá pra filtrar por canal, atacado, varejo e e-commerce, e combina com o filtro de filial que já existia.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a030/6-0
+00:00:52.000 --> 00:00:57.750
+<v Fernanda Alves>Eu testei ontem com a minha carteira e bateu tudo com o que eu tenho no sistema.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a031/7-0
+00:00:57.750 --> 00:01:03.500
+<v Fernanda Alves>Esse pode considerar aprovado.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a040/8-0
+00:01:04.000 --> 00:01:09.500
+<v Mendes,Otavio,BR-Campinas>Concordo, filtro ok.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a050/10-0
+00:01:10.000 --> 00:01:24.500
+<v Souza,Ana,BR-São Paulo>Agora a exportação: o botão exporta a tabela com os filtros aplicados.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a060/12-0
+00:01:25.000 --> 00:01:31.250
+<v Fernanda Alves>Funciona, mas o arquivo vem com o código da filial, não com o nome.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a061/13-0
+00:01:31.250 --> 00:01:37.500
+<v Fernanda Alves>Ninguém sabe código de filial de cabeça.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a070/14-0
+00:01:38.000 --> 00:01:45.500
+<v Prado, Bruno (BR-São Paulo)>Dá pra trocar, é simples, é um ajuste no layout do arquivo.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a080/16-0
+00:01:46.000 --> 00:01:57.500
+<v Fernanda Alves>Então eu aprovo a exportação com a ressalva de vir o nome da filial em vez do código.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a090/18-0
+00:01:58.000 --> 00:02:08.750
+<v Souza,Ana,BR-São Paulo>Anotado.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a091/19-0
+00:02:08.750 --> 00:02:19.500
+<v Souza,Ana,BR-São Paulo>Agora o alerta de ruptura: quando o estoque projetado de um SKU numa loja fica abaixo de 3 dias de cobertura, dispara um e-mail pro vendedor da loja.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a100/20-0
+00:02:20.000 --> 00:02:25.750
+<v Mendes,Otavio,BR-Campinas>Esse é o que mais me interessa.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a101/21-0
+00:02:25.750 --> 00:02:31.500
+<v Mendes,Otavio,BR-Campinas>Mas eu não consegui testar, a minha base de teste não tinha nenhuma ruptura.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a110/22-0
+00:02:32.000 --> 00:02:44.500
+<v Fernanda Alves>Eu também não testei direito. Vou testar com a base de outubro e te falo.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a120/24-0
+00:02:45.000 --> 00:02:51.250
+<v Souza,Ana,BR-São Paulo>Uma coisa que eu vi ontem: no card de total deu 1.204 lojas, e na tabela deu 1.240.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a121/25-0
+00:02:51.250 --> 00:02:57.500
+<v Souza,Ana,BR-São Paulo>Não bate.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a130/26-0
+00:02:58.000 --> 00:03:03.750
+<v Prado, Bruno (BR-São Paulo)>É um bug simples, é a contagem de loja inativa que entra num e não no outro.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a131/27-0
+00:03:03.750 --> 00:03:09.500
+<v Prado, Bruno (BR-São Paulo)>Eu corrijo até amanhã.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a140/28-0
+00:03:10.000 --> 00:03:21.500
+<v Mendes,Otavio,BR-Campinas>Pra mim isso é bloqueante pro go-live. Diretor olha o card, não olha a tabela.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a150/30-0
+00:03:22.000 --> 00:03:27.500
+<v Lucas Andrade>Então, dá pra dizer que o módulo 4 está homologado?</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a160/32-0
+00:03:28.000 --> 00:03:34.750
+<v Fernanda Alves>Ainda não.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a161/33-0
+00:03:34.750 --> 00:03:41.500
+<v Fernanda Alves>Falta o alerta. Filtro aprovado, exportação aprovada com a ressalva, e o alerta eu te falo depois de testar.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a170/34-0
+00:03:42.000 --> 00:03:47.500
+<v Lucas Andrade>Ok. E o go-live, que estava pra 04/12?</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a180/36-0
+00:03:48.000 --> 00:03:53.750
+<v Souza,Ana,BR-São Paulo>Se o alerta for aprovado até a semana que vem, a gente mantém 04/12.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a181/37-0
+00:03:53.750 --> 00:03:59.500
+<v Souza,Ana,BR-São Paulo>Senão, eu reavalio a data.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a190/38-0
+00:04:00.000 --> 00:04:07.500
+<v Lucas Andrade>Combinado. Ana, você me avisa se mudar a data.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a200/40-0
+00:04:08.000 --> 00:04:17.500
+<v Mendes,Otavio,BR-Campinas>Uma sugestão: seria legal ter o alerta também no Teams, não só no e-mail.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a210/42-0
+00:04:18.000 --> 00:04:25.500
+<v Souza,Ana,BR-São Paulo>Dá pra pensar, mas fica pra depois do go-live.</v>
+
+7c3e1f3a-9b2d-4c55-8e1a-0d9f6b2a220/44-0
+00:04:26.000 --> 00:04:32.000
+<v Lucas Andrade>Obrigado, pessoal. Bom trabalho.</v>

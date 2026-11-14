@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+# Exports do Copilot ficam fora; só entram os .zip das skills gerados por ferramentas/empacotar_skills.py
+*.zip
+!*/*/skills-zip/*.zip
+!ferramentas/sonda-skills.zip

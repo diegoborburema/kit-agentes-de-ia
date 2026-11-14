@@ -1,0 +1,39 @@
+{
+  "version": "1.0.7",
+  "id": "5b839c70-56fc-5dbb-be58-3637bea7fbfc",
+  "developer": {
+    "name": "Kit de agentes de IA (github.com/diegoborburema)",
+    "websiteUrl": "https://go.microsoft.com/fwlink/?linkid=2352565",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?linkid=2138865",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2138950"
+  },
+  "name": {
+    "short": "Coach Apresentação",
+    "full": "Coach Apresentação"
+  },
+  "description": {
+    "short": "Criado com o Construtor de Agentes do Microsoft 365 Copilot",
+    "full": "Coach de storytelling baseado no Canvas de Apresentação. Identifica o tipo de atividade, define quais caixas do canvas são necessárias para o caso, conduz o preenchimento respeitando as dependências entre as caixas, mostra o progresso e gera um prompt completo para o Claude criar o roteiro e a apresentação em PowerPoint."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#E0F6FC",
+  "validDomains": [
+    "*.botframework.com",
+    "*.*.botframework.com",
+    "copilotstudio.microsoft.com",
+    "copilotstudio.preview.microsoft.com"
+  ],
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "5b839c70-56fc-5dbb-be58-3637bea7fbfc.gpt.9b93ed70-27ac-56aa-8ca5-9f6c116d6478",
+        "file": "declarativeAgent_0.json"
+      }
+    ]
+  }
+}
