@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "id": "32483619-501a-5175-a623-4781fb1bb408",
+  "developer": {
+    "name": "Kit de agentes de IA (github.com/diegoborburema)",
+    "websiteUrl": "https://go.microsoft.com/fwlink/?linkid=2352565",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?linkid=2138865",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2138950"
+  },
+  "name": {
+    "short": "Coach de Estrutura",
+    "full": "Coach de Estrutura"
+  },
+  "description": {
+    "short": "Criado com o Construtor de Agentes do Microsoft 365 Copilot",
+    "full": "Ajuda a decidir como o time se organiza para entregar o plano: quem é dono de quê, com que autonomia, em quantas frentes e quem apoia quem. Lê o plano 30-60-90 do Coach de Gestão, monta o mapa do time com o que você disser, soma a carga de cada pessoa e diagnostica as prioridades em risco (capacidade, autonomia, clareza, coordenação ou foco) antes de propor qualquer mudança. Mostra Manter e opções do movimento mais leve ao mais pesado, com custo, risco, teste de 4 semanas e critério de sucesso. Mudanças formais só são sinalizadas. Entrega um arquivo confidencial, o bloco para o plano e os pontos para os 1-1s, em termos neutros. Não busca informação sobre pessoas."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFF3E0",
+  "validDomains": [
+    "*.botframework.com",
+    "*.*.botframework.com",
+    "copilotstudio.microsoft.com",
+    "copilotstudio.preview.microsoft.com"
+  ],
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "32483619-501a-5175-a623-4781fb1bb408.gpt.224d77b1-49db-5991-9cc4-f5a95a6d473e",
+        "file": "declarativeAgent_0.json"
+      }
+    ]
+  }
+}

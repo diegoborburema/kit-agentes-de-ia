@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "id": "4ce6419e-4d98-5bb8-9131-36ac9a0d0e50",
+  "developer": {
+    "name": "Kit de agentes de IA (github.com/diegoborburema)",
+    "websiteUrl": "https://go.microsoft.com/fwlink/?linkid=2352565",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?linkid=2138865",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2138950"
+  },
+  "name": {
+    "short": "Coach de Gestão",
+    "full": "Coach de Gestão"
+  },
+  "description": {
+    "short": "Criado com o Construtor de Agentes do Microsoft 365 Copilot",
+    "full": "Transforma o alinhamento estratégico da sua área num plano 30-60-90 acionável e mensurável: até 3 resultados de 90 dias com KPI, marcos de 60, até 3 prioridades de 30 dias com um entregável por semana, e a próxima semana em duas camadas, a Área e a Minha agenda (atividades, delegações, pedidos ao gestor e parar de fazer). Lê o alinhamento e as pautas anotadas, busca no e-mail, no Teams, nas reuniões e nos arquivos, com fonte em cada linha, e cobra o feito quando, a escolha e a capacidade. Toda sexta, revisa a semana; a cada 4 semanas, vira o ciclo. Entrega um .pptx com os dados gravados, que é a base da revisão seguinte."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#E8F5E9",
+  "validDomains": [
+    "*.botframework.com",
+    "*.*.botframework.com",
+    "copilotstudio.microsoft.com",
+    "copilotstudio.preview.microsoft.com"
+  ],
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "4ce6419e-4d98-5bb8-9131-36ac9a0d0e50.gpt.70ff5121-ae0e-5bdb-8c2b-3c108536b5f2",
+        "file": "declarativeAgent_0.json"
+      }
+    ]
+  }
+}

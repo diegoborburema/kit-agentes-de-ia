@@ -10,7 +10,11 @@ Eles nasceram no **Microsoft 365 Copilot**, e a maior parte também funciona no 
 |---|---|---|
 | [Coach de Apresentação](produto/coach-apresentacao/) | Conduz você por um canvas de storytelling e entrega um prompt pronto para o Claude montar o roteiro e o PowerPoint | Produto |
 | [Redator de Atas](produto/redator-de-atas/) | Transforma a transcrição de uma reunião numa ata fiel à fonte e aponta o que só você pode confirmar | Produto |
-| Gestão | Organizador de 1:1 e coaches de gestão | Chegando |
+| [Coach de Gestão](gestao/coach-de-gestao/) | Transforma os desafios da área num plano de 30, 60 e 90 dias e revisa toda sexta | Gestão |
+| [Coach de Estrutura](gestao/coach-de-estrutura/) | Divide o plano entre as pessoas do time, mede a carga e propõe ajustes com um teste de 4 semanas | Gestão |
+| [Organizador de 1:1](gestao/organizador-1-1/) | Prepara a pauta do 1:1 com o gestor ou com alguém do time e acompanha os combinados | Gestão |
+
+Os três de gestão funcionam em sequência, da estratégia à semana: veja [como eles se encaixam](gestao/).
 
 Também tem:
 - [**O método**](metodo/): como versionar e testar um agente como se fosse um produto.
@@ -37,7 +41,7 @@ Você não precisa de conta, de git nem de programar.
 
 ```
 produto/        agentes para o trabalho de produto
-gestao/         agentes para gestão de pessoas e times (chegando)
+gestao/         agentes para quem lidera um time: plano, estrutura e 1:1
 metodo/         o método e os modelos para criar e testar seus agentes
 ferramentas/    scripts de apoio
 ```
@@ -55,7 +59,9 @@ Dentro de cada agente:
 
 ## Sobre os dados
 
-Todo nome de pessoa, projeto, sistema ou empresa nos exemplos e testes é **fictício**. Se algum coincidir com algo real, é coincidência.
+Todo nome de pessoa, projeto, sistema, empresa e número nos exemplos e testes é **fictício**. Se algum coincidir com algo real, é coincidência.
+
+Os agentes de gestão lidam com informações sobre pessoas do seu time. Use-os só num ambiente aprovado pela sua empresa e não leve esses dados para ferramentas não autorizadas. Nenhum agente daqui avalia pessoas.
 
 ## Achou um problema ou tem uma ideia?
 
