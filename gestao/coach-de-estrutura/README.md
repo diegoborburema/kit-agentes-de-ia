@@ -35,7 +35,7 @@ Suba os 3 .zip como skills e cole as instruções num projeto. Como ele não dep
 
 | Versão | Situação |
 |---|---|
-| 1.0.1 | O código passa na conferência automática ([`testes/conferir_codigo.py`](testes/conferir_codigo.py)). Ainda sem uso real nem rodada de perguntas de controle registrados |
+| 1.0.2 | O código passa na conferência automática ([`testes/conferir_codigo.py`](testes/conferir_codigo.py)). Ainda sem uso real nem rodada de perguntas de controle registrados |
 
 ## Arquivos desta pasta
 

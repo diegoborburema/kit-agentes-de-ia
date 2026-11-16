@@ -49,7 +49,7 @@ Suba os 5 .zip como skills, na área de Skills das configurações, e cole as in
 
 | Versão | Situação |
 |---|---|
-| 1.1.0 | Em uso pelo autor. O código passa na conferência automática ([`testes/conferir_codigo.py`](testes/conferir_codigo.py)); um uso real está registrado em [`testes/RESULTADOS.md`](testes/RESULTADOS.md). A rodada de perguntas de controle em conversa ainda não foi registrada |
+| 1.1.1 | Em uso pelo autor. O código passa na conferência automática ([`testes/conferir_codigo.py`](testes/conferir_codigo.py)); um uso real está registrado em [`testes/RESULTADOS.md`](testes/RESULTADOS.md). A rodada de perguntas de controle em conversa ainda não foi registrada |
 
 ## Arquivos desta pasta
 
