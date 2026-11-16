@@ -52,6 +52,11 @@ for cmd in (["conferir_limites.py", nome_tema], ["montar_skills.py", "--conferir
     assert r.returncode == 0, r.stdout
 ok("limites do Agent Builder respeitados; script em dia com o código")
 
+# 1b. Caso de teste 11 (uso real de 16/11): o pedido é gravado em Python, nunca por bash/heredoc
+texto_skill = SKILL.read_text(encoding="utf-8")
+assert "json.dump" in texto_skill and "Nunca grave o pedido pelo terminal" in texto_skill and "heredoc" in texto_skill
+ok("skill manda gravar o pedido em Python e proíbe bash/heredoc (caso 11)")
+
 # 2. Nomes únicos entre os módulos do script montado
 fontes = SCRIPT.read_text(encoding="utf-8").split("\n", 1)[0].split("a partir de: ")[1].split(". Não edite")[0].split()
 nomes = {}

@@ -39,7 +39,7 @@ Suba os 3 .zip como skills e cole as instruções num projeto. Sem a busca no e-
 
 | Versão | Situação |
 |---|---|
-| 1.3.0 | Em uso pelo autor desde a 1.0.0. Na 1.3.0, o código do .pptx passou para um script, sem mudar o resultado: os slides saem idênticos aos da 1.2.0. O código passa na conferência automática ([`testes/conferir_codigo.py`](testes/conferir_codigo.py)) |
+| 1.3.1 | Em uso pelo autor desde a 1.0.0. Na 1.3.0, o código do .pptx passou para um script, sem mudar o resultado: os slides saem idênticos aos da 1.2.0. Na 1.3.1, o pedido ao script passou a ser gravado só em Python, depois de um travamento no uso real. O código passa na conferência automática ([`testes/conferir_codigo.py`](testes/conferir_codigo.py)) |
 
 ## Arquivos desta pasta
 

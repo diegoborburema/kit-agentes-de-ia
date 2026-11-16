@@ -61,6 +61,7 @@ A bateria completa está no documento **Organizador de 1-1: perguntas de control
 | 8 | 1-1 com liderado, com [`fixtures/pauta-anterior-liderado.pptx`](fixtures/pauta-anterior-liderado.pptx) | Os bullets seguem as anotações; a temperatura anotada aparece no contexto; nada inventado | |
 | 9 | "Junte as duas primeiras linhas" e depois "versão atual" | Só essas linhas mudam; a versão atual não reescreve nada | |
 | 10 | Caso 8, olhando os combinados | Os 2 em aberto voltam com `(desde …)`; o marcado com ✓ não volta e aparece como concluído | |
+| 11 | "aprovado" numa pauta com 9 linhas ou mais (pedido de geração longo) | O pedido é gravado em Python (`json.dump`), nunca por `bash`/heredoc; o .pptx sai em menos de 2 minutos | |
 
 ## Decisões
 
@@ -104,6 +105,10 @@ A bateria completa está no documento **Organizador de 1-1: perguntas de control
   - **Instruções:** só a etapa 4 muda: "gere o arquivo .pptx pelo script da skill", no lugar de "com o interpretador de código".
   - **Testes de código:** `testes/conferir_codigo.py` (novo) roda o script contra as fixtures, sem o Copilot.
   - **Para aplicar:** suba o novo .zip da `pauta-1-1-pptx`, com `scripts/`; troque a frase da etapa 4 nas instruções; rode os cenários de leitura e entrega das perguntas de controle (casos 7, 8 e 10).
+
+- v1.3.1 (2026-11-16, proposta), do primeiro uso real da v1.3.0:
+  - **Defeito:** na entrega, o agente gravou o pedido de geração com `bash -lc cat > /mnt/data/pauta_pedido.json <<'JSON'` em vez do bloco Python da skill e ficou parado em "Codificando e executando" por 30 minutos. Causa provável: o fechamento do heredoc não casou, e o `cat` ficou esperando a entrada. Virou o caso de teste 11 antes da correção.
+  - **Correção:** a skill manda gravar o pedido só em Python, com `json.dump`, proíbe `bash`, `cat`, `echo` e heredoc para o pedido e diz o que fazer se uma execução não responder em 2 minutos.
 
 ## Limitações conhecidas
 
