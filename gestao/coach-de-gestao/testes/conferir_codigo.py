@@ -457,4 +457,9 @@ if validador.exists():
     ok("OOXML válido nas fixtures e nos arquivos gerados")
 
 shutil.rmtree(TMP)
+
+# SCR-02 (uso real do 1-1 em 16/11): o pedido é gravado em Python, nunca por bash/heredoc
+_skill_txt = (RAIZ / "gestao/coach-de-gestao/pacote/skills/coach-pptx/SKILL.md").read_text(encoding="utf-8")
+assert "json.dump" in _skill_txt and "Nunca grave o pedido pelo terminal" in _skill_txt and "heredoc" in _skill_txt
+ok("skill manda gravar o pedido em Python e proíbe bash/heredoc (SCR-02)")
 print("\nTudo certo.")

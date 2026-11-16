@@ -11,7 +11,7 @@ Todo anexo é lido, a carga é somada e o arquivo é gerado **só** pelo script 
 
 ## Como rodar
 
-1. No interpretador de código, grave o pedido em JSON em `/mnt/data/estrutura_pedido.json`:
+1. No interpretador de código **Python**, grave o pedido em JSON em `/mnt/data/estrutura_pedido.json` com `json.dump`, como no bloco abaixo. **Nunca grave o pedido pelo terminal** (`bash`, `cat`, `echo`, heredoc `<<`): se o fechamento do heredoc falhar, a execução fica parada esperando para sempre.
 
 ~~~python
 import json
@@ -26,6 +26,8 @@ json.dump(pedido, open("/mnt/data/estrutura_pedido.json", "w", encoding="utf-8")
 import glob, runpy
 runpy.run_path(glob.glob("/home/oai/skills/**/estrutura-pptx/scripts/estrutura_pptx.py", recursive=True)[0], run_name="__main__")
 ~~~
+
+Se uma execução não responder em 2 minutos, ela travou: na resposta seguinte, avise o usuário em uma linha e grave o pedido de novo pelo bloco Python.
 
 Cite os arquivos pelo nome, como aparecem nos anexos. Arquivo "não encontrado" quer dizer que ele não foi anexado nesta conversa: peça para anexar.
 

@@ -135,6 +135,9 @@ A bateria completa está em [`testes/PERGUNTAS-DE-CONTROLE.md`](testes/PERGUNTAS
   - **Recesso.** A revisão pula as semanas de recesso logo depois da semana que fecha (até a S4) e abre a primeira semana depois do recesso; `trabalhar_no_recesso` desliga o pulo.
   - **O script da `estrutura-pptx` é remontado nesta versão**, porque usa o `plano.py` e o `plano_pptx.py`. O comportamento do Coach de Estrutura não muda.
 
+- v1.1.1 (2026-11-16, proposta), por prevenção, do uso real do Organizador de 1-1 v1.3.0 em 16/11:
+  - **Pedido só em Python.** No 1-1, o agente gravou o pedido com `bash` e heredoc em vez do bloco Python da skill e ficou parado por 30 minutos (o `cat` esperava o fechamento do heredoc). Esta skill tem o mesmo passo, então ganhou a mesma regra: o pedido é gravado só com `json.dump`; `bash`, `cat`, `echo` e heredoc ficam proibidos para o pedido; uma execução sem resposta em 2 minutos é tratada como travada. Pergunta SCR-02 criada antes da correção.
+
 ## Limitações conhecidas
 
 - A busca do Copilot é semântica, não exaustiva: o radar mostra o que ela achou, não tudo.

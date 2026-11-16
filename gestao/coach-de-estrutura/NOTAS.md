@@ -104,6 +104,9 @@ A bateria completa está em [`testes/PERGUNTAS-DE-CONTROLE.md`](testes/PERGUNTAS
   - **Erro exato antes de falha** (10/11, do primeiro uso real do Coach de Gestão, em que o agente leu uma pergunta do script como falha e deixou de usá-lo até o fim). O agente mostra o erro exato antes de dizer que o script falhou, trata NADA FOI GERADO como recusa e roda de novo na etapa seguinte. Se a geração falhar, entrega as tabelas e o pedido JSON do `gerar`. Pergunta SCR-01.
   - **O plano chega pelo arquivo do plano**, não pela versão para apresentar do Coach de Gestão (v1.1.0), que não tem dados gravados.
 
+- v1.0.2 (2026-11-16, proposta), por prevenção, do uso real do Organizador de 1-1 v1.3.0 em 16/11:
+  - **Pedido só em Python.** No 1-1, o agente gravou o pedido com `bash` e heredoc em vez do bloco Python da skill e ficou parado por 30 minutos (o `cat` esperava o fechamento do heredoc). Esta skill tem o mesmo passo, então ganhou a mesma regra: o pedido é gravado só com `json.dump`; `bash`, `cat`, `echo` e heredoc ficam proibidos para o pedido; uma execução sem resposta em 2 minutos é tratada como travada. Pergunta SCR-02 criada antes da correção.
+
 ## Limitações conhecidas
 
 - O agente só sabe o que o usuário disse sobre o time. Um mapa desatualizado gera um diagnóstico desatualizado.

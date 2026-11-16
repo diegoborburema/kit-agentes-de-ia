@@ -124,6 +124,7 @@ Do alinhamento anexado ao .pptx, com busca, coaching e as duas camadas.
 | FIC-02 | C | As janelas estão certas? | S1: 16–20/11 · 30 até 11/12 · 60 de 14/12 a 08/01 · 90 até 05/02/2027 | v1.0.0 |
 | FIC-03 | I | A janela de busca está certa? | Começa em 16/10/2026 (4 semanas antes da data do plano) e vai até hoje, o dia da conversa | v1.0.0 |
 | SCR-01 | C | O script nunca foi dado por indisponível sem o erro? | Em nenhuma etapa o agente diz que o script falhou ou está indisponível sem mostrar o erro exato; uma linha PERGUNTE vira pergunta ao usuário; depois de uma falha, roda o script de novo na etapa seguinte; se a entrega falhar, entrega a tabela e o bloco do pedido | v1.1.0 |
+| SCR-02 | C | O pedido ao script foi gravado em Python? | Em todas as etapas, o pedido é gravado com `json.dump` no interpretador; nunca por `bash`, `cat`, `echo` ou heredoc. Nenhuma execução fica sem resposta | v1.1.1 |
 | PRG-01 | I | A linha de status está sempre presente? | Em todas as respostas, com etapa, camada, semana do ciclo, as 3 janelas com datas e a janela de busca | v1.0.0 |
 | RET-01 | C | O retrato organizou o alinhamento? | Os 5 blocos (Mandato, Direcionadores, Movimentos, Desafios, Restrições) com o conteúdo da fixture: 3 direcionadores, 7 movimentos e 4 desafios, cada item com a fonte (slide do alinhamento) | v1.0.0 |
 | RET-04 | I | O 1-1 entrou no retrato? | Tarumã com o Buriti em 18/12 (🔴) e Painel Jatobá com a Onda 2 em 01/12, com a fonte `[1-1 Ana · 09/11]` | v1.0.0 |

@@ -105,6 +105,7 @@ Do sinal do Coach de Gestão ao arquivo: mapa ditado, diagnóstico, opções, de
 | FIC-01 | C | A ficha está certa e numa mensagem? | O gatilho (o sinal do plano e o que o usuário apontou); o plano de 13/11 lido; diz que não há mapa anterior; o escopo do v1 (dentro do time); pede confirmação | v1.0.0 |
 | PRG-01 | I | A linha de status está sempre presente? | Em todas as respostas, com etapa, gatilho, "Plano: 13/11", "Pessoas no mapa: 3" (depois do mapa) e "Escopo: dentro do time" | v1.0.0 |
 | SCR-01 | C | O script nunca foi dado por indisponível sem o erro? | Em nenhuma etapa o agente diz que o script falhou ou está indisponível sem mostrar o erro exato; NADA FOI GERADO é tratado como recusa, não como falha; depois de uma falha, roda o script de novo na etapa seguinte; se a geração falhar, entrega as tabelas e o bloco do pedido | v1.0.1 |
+| SCR-02 | C | O pedido ao script foi gravado em Python? | Em todas as etapas, o pedido é gravado com `json.dump` no interpretador; nunca por `bash`, `cat`, `echo` ou heredoc. Nenhuma execução fica sem resposta | v1.0.2 |
 | MAP-01 | C | O mapa saiu do texto ditado? | As 8 linhas da ficha do caso, com % e autonomia como ditadas; as vagas à parte; o interesse em Visualização de Dados fora da tabela, marcado como privado; pede confirmação | v1.0.0 |
 | MAP-02 | C | Nada foi inferido? | Nenhuma autonomia, % ou papel que não esteja na R-A1; o que faltar vira pergunta | v1.0.0 |
 | CAR-01 | C | A carga foi conferida? | Ana 110%, apontada como acima de 100%; Bruno e Caio em 100%; os números batem com o código | v1.0.0 |
