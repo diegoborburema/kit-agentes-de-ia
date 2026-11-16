@@ -1,0 +1,39 @@
+{
+  "version": "1.2.0",
+  "id": "0af30088-7a14-52b2-9387-7384c2eac6bb",
+  "developer": {
+    "name": "Kit de agentes de IA (github.com/diegoborburema)",
+    "websiteUrl": "https://go.microsoft.com/fwlink/?linkid=2352565",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?linkid=2138865",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2138950"
+  },
+  "name": {
+    "short": "Organizador de 1-1",
+    "full": "Organizador de 1-1"
+  },
+  "description": {
+    "short": "Criado com o Construtor de Agentes do Microsoft 365 Copilot",
+    "full": "Prepara a pauta do seu próximo 1-1 com o gestor ou com um liderado. Você indica a pessoa, as prioridades da vez e a pauta anterior; o agente busca no seu e-mail, no Teams, nas reuniões e no calendário o que aconteceu desde o último 1-1 e propõe a pauta no layout padrão: prioridades, Pessoas, Projetos e o tema da semana (Metas & PDP, Carreira, Feedback mútuo, Carga & bem-estar). Com o gestor, cada linha traz atualização, tipo e status. Com liderados, traz pontos para puxar cada tema, espaço para anotações e para os temas que ele trouxer; as anotações viram a base da pauta seguinte. Os combinados do 1-1 ficam num bloco próprio e voltam toda semana até serem feitos. Depois da revisão, entrega a tabela e o arquivo .pptx."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#EDE7F6",
+  "validDomains": [
+    "*.botframework.com",
+    "*.*.botframework.com",
+    "copilotstudio.microsoft.com",
+    "copilotstudio.preview.microsoft.com"
+  ],
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "0af30088-7a14-52b2-9387-7384c2eac6bb.gpt.17f9bef6-b21f-5cc4-9efe-10e933330ee1",
+        "file": "declarativeAgent_0.json"
+      }
+    ]
+  }
+}
