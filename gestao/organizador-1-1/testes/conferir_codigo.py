@@ -9,8 +9,9 @@ O que confere:
   2. O script montado não repete nomes entre os módulos de origem.
   3. Leitura das duas pautas anteriores: para cima (9 linhas, sem combinados) e para baixo (8 linhas, 3 combinados,
      1 marcado como feito), com as prioridades da legenda.
+  1b/1c. Casos 11 e 12: pedido gravado só em Python; execução travada → conversa nova.
   4. Geração para baixo (exemplo da skill) e para cima com combinados: linhas iguais às pedidas, na ordem,
-     perguntas nas notas e quebra em 2 slides quando não cabe.
+     perguntas nas notas e quebra em 2 slides quando não cabe. "Para puxar" como texto único vira 1 bullet.
   5. Recusas: pedido sem campos, seção inválida, arquivo não anexado, ação desconhecida.
   6. Plano B: o script roda pelo interpretador (runpy).
 Sai com erro na primeira falha.
@@ -57,6 +58,10 @@ texto_skill = SKILL.read_text(encoding="utf-8")
 assert "json.dump" in texto_skill and "Nunca grave o pedido pelo terminal" in texto_skill and "heredoc" in texto_skill
 ok("skill manda gravar o pedido em Python e proíbe bash/heredoc (caso 11)")
 
+# 1c. Caso de teste 12 (uso real de 16/11): execução sem resposta → nada mais nesta conversa, conversa nova
+assert "não rode mais nada" in texto_skill and "conversa nova" in texto_skill and "tabela final aprovada" in texto_skill
+ok("skill manda pedir uma conversa nova quando a execução trava (caso 12)")
+
 # 2. Nomes únicos entre os módulos do script montado
 fontes = SCRIPT.read_text(encoding="utf-8").split("\n", 1)[0].split("a partir de: ")[1].split(". Não edite")[0].split()
 nomes = {}
@@ -90,6 +95,16 @@ cod, txt = rodar(ns["pedido"])
 assert cod == 0 and "(iguais às pedidas, na ordem)" in txt and "Perguntas para levar nas notas: sim" in txt, txt
 assert (TMP / ns["pedido"]["saida"]).exists(), txt
 ok("geração para baixo (exemplo da skill): linhas iguais às pedidas, perguntas nas notas")
+
+# 4b. "puxar" como um texto só, e não como lista: sai 1 bullet, e não um bullet por letra
+borda = json.loads(json.dumps(ns["pauta"]))
+borda["linhas"][0]["puxar"] = "Escalou a dependência com a Pitanga?"
+cod, txt = rodar({"acao": "gerar", "saida": "1-1 Beto texto.pptx", "pauta": borda})
+assert cod == 0 and "· 1 slide(s)" in txt and "(iguais às pedidas, na ordem)" in txt, txt
+cod, txt = rodar({"acao": "ler", "arquivos": ["1-1 Beto texto.pptx"]})
+linha = json.loads((TMP / "pauta_leitura.json").read_text(encoding="utf-8"))[0]["pauta"]["linhas"][0]
+assert cod == 0 and linha["texto"] == "• Escalou a dependência com a Pitanga?", linha
+ok("puxar como texto único: 1 bullet")
 
 secao = {"Quimera-7": "P1", "Tarumã": "P2", "Ipê-Roxo": "P3", "Pessoas": "PESSOAS", "Carga & bem-estar": "TEMA"}
 pauta_cima = {"direcao": "cima", "usuario": "Lucas", "pessoa": "Gustavo", "semana": "02–06/11/2026",

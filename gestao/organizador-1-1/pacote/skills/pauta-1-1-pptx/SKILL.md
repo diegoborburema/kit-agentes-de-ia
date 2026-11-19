@@ -25,7 +25,7 @@ import glob, runpy
 runpy.run_path(glob.glob("/home/oai/skills/**/pauta-1-1-pptx/scripts/pauta_1_1_pptx.py", recursive=True)[0], run_name="__main__")
 ~~~
 
-Se uma execução não responder em 2 minutos, ela travou: na resposta seguinte, avise o usuário em uma linha e grave o pedido de novo pelo bloco Python.
+Se uma execução não responder em 2 minutos, ela travou, e o ambiente desta conversa pode ter ficado preso: um comando novo aqui fica esperando atrás dela. Na resposta seguinte, não rode mais nada: avise o usuário em uma linha e peça para abrir uma conversa nova, anexar a pauta anterior e colar a tabela final aprovada.
 
 Cite os arquivos pelo nome, como aparecem nos anexos. Arquivo "não encontrado" quer dizer que ele não foi anexado nesta conversa: peça para anexar.
 
