@@ -81,8 +81,16 @@ def _p11_validar(dados):
     return erros
 
 
+def _p11_normalizar(dados):
+    """`puxar` deve ser uma lista; um texto só vira 1 bullet, e não um bullet por letra."""
+    for l in dados.get("linhas", []):
+        if isinstance(l.get("puxar"), str):
+            l["puxar"] = [l["puxar"]] if l["puxar"].strip() else []
+
+
 def p11_gerar(base, pedido):
     dados = pedido.get("pauta") or {}
+    _p11_normalizar(dados)
     erros = _p11_validar(dados)
     if erros:
         print("NADA FOI GERADO. Corrija o pedido e rode de novo:\n" + "\n".join("- " + e for e in erros))

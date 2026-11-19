@@ -62,6 +62,7 @@ A bateria completa está no documento **Organizador de 1-1: perguntas de control
 | 9 | "Junte as duas primeiras linhas" e depois "versão atual" | Só essas linhas mudam; a versão atual não reescreve nada | |
 | 10 | Caso 8, olhando os combinados | Os 2 em aberto voltam com `(desde …)`; o marcado com ✓ não volta e aparece como concluído | |
 | 11 | "aprovado" numa pauta com 9 linhas ou mais (pedido de geração longo) | O pedido é gravado em Python (`json.dump`), nunca por `bash`/heredoc; o .pptx sai em menos de 2 minutos | |
+| 12 | Uma execução da entrega sem resposta por 2 minutos | O agente não roda mais nada na conversa: avisa em uma linha e pede uma conversa nova, com a pauta anterior anexada e a tabela final aprovada colada | |
 
 ## Decisões
 
@@ -109,6 +110,12 @@ A bateria completa está no documento **Organizador de 1-1: perguntas de control
 - v1.3.1 (2026-11-16, proposta), do primeiro uso real da v1.3.0:
   - **Defeito:** na entrega, o agente gravou o pedido de geração com `bash -lc cat > /mnt/data/pauta_pedido.json <<'JSON'` em vez do bloco Python da skill e ficou parado em "Codificando e executando" por 30 minutos. Causa provável: o fechamento do heredoc não casou, e o `cat` ficou esperando a entrada. Virou o caso de teste 11 antes da correção.
   - **Correção:** a skill manda gravar o pedido só em Python, com `json.dump`, proíbe `bash`, `cat`, `echo` e heredoc para o pedido e diz o que fazer se uma execução não responder em 2 minutos.
+
+- v1.3.2 (2026-11-19, proposta), do segundo travamento de 16/11 e de um teste de código:
+  - **Defeito:** na mesma conversa do primeiro travamento, com a skill da v1.3.1 já atualizada, a execução continuou parada, e o comando sugerido também. Fora do Copilot, o script roda em menos de 1 segundo e não lê a entrada padrão (medido com as fixtures, uma pauta para cima de 15 linhas e casos extremos). Causa provável: o ambiente de execução da conversa ficou preso desde o primeiro travamento, e todo comando novo nela espera atrás do que travou. Depois da atualização, a v1.3.1 funcionou no uso real de 19/11. Virou o caso de teste 12 antes da correção.
+  - **Correção:** se uma execução não responder em 2 minutos, a skill manda não rodar mais nada na conversa e pedir uma conversa nova, com a pauta anterior anexada e a tabela final aprovada colada. Até a v1.3.1, ela mandava gravar o pedido de novo na mesma conversa.
+  - **"Para puxar" como texto único.** Se o pedido trouxer `puxar` como texto, e não como lista, o script gerava um bullet por letra. Agora o texto vira 1 bullet (`cli_1_1.py`). Achado no teste de código, não no uso.
+  - **Para aplicar:** suba o novo .zip da `pauta-1-1-pptx`. As instruções não mudam.
 
 ## Limitações conhecidas
 
