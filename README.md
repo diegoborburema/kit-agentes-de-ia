@@ -10,6 +10,7 @@ Eles nasceram no **Microsoft 365 Copilot**, e a maior parte também funciona no 
 |---|---|---|
 | [Coach de Apresentação](produto/coach-apresentacao/) | Conduz você por um canvas de storytelling e entrega um prompt pronto para o Claude montar o roteiro e o PowerPoint | Produto |
 | [Redator de Atas](produto/redator-de-atas/) | Transforma a transcrição de uma reunião numa ata fiel à fonte e aponta o que só você pode confirmar | Produto |
+| [Assistente de PRD](produto/assistente-de-prd/) | Conduz o PRD de um produto de dados ou de IA da dor ao go-live, em 5 etapas e 2 gates, e devolve o documento em .docx | Produto |
 | [Coach de Gestão](gestao/coach-de-gestao/) | Transforma os desafios da área num plano de 30, 60 e 90 dias e revisa toda sexta | Gestão |
 | [Coach de Estrutura](gestao/coach-de-estrutura/) | Divide o plano entre as pessoas do time, mede a carga e propõe ajustes com um teste de 4 semanas | Gestão |
 | [Organizador de 1:1](gestao/organizador-1-1/) | Prepara a pauta do 1:1 com o gestor ou com alguém do time e acompanha os combinados | Gestão |
