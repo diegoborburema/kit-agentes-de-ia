@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "id": "99b70b8e-9b9c-5d98-8a84-24f9a08d7a8c",
+  "developer": {
+    "name": "Kit de agentes de IA (github.com/diegoborburema)",
+    "websiteUrl": "https://go.microsoft.com/fwlink/?linkid=2352565",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?linkid=2138865",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2138950"
+  },
+  "name": {
+    "short": "Assistente de PRD",
+    "full": "Assistente de PRD"
+  },
+  "description": {
+    "short": "Criado com o Construtor de Agentes do Microsoft 365 Copilot",
+    "full": "Ajuda a escrever e revisar o PRD (Product Requirements Document) de um produto de dados ou de IA, novo ou evolução, em 5 etapas com checkpoints e 2 gates: Dor; Requisitos e critérios de aceite por release; Solução e benefícios (Gate 1 · Vale construir?); Refinamento técnico e custos, com canvas de engenharia de dados, ciência de dados, software, segurança e operação; Go-live e transição, com homologação, cutover, contingência e rollback (Gate 2 · PRD assinado). Você anexa o que já tem ou responde às perguntas. O agente preenche as seções do seu perfil (PM, especialista técnico ou revisor do gate), avalia cada uma pelo critério de qualidade, mostra o que falta com as perguntas agrupadas por quem responde e confere a consistência. Devolve o PRD em .docx a qualquer momento, a partir do template que vem com ele, e um resumo visual por público em HTML. Não decide gates nem inventa números."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#E3F1EE",
+  "validDomains": [
+    "*.botframework.com",
+    "*.*.botframework.com",
+    "copilotstudio.microsoft.com",
+    "copilotstudio.preview.microsoft.com"
+  ],
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "99b70b8e-9b9c-5d98-8a84-24f9a08d7a8c.gpt.50878c57-0487-5ce5-8932-e89e44d63f57",
+        "file": "declarativeAgent_0.json"
+      }
+    ]
+  }
+}
